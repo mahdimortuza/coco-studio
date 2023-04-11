@@ -18,11 +18,17 @@ const Header = () => {
             </div>
 
 
-            <nav className='py-6 bg-mistyrose-100'>
+            <nav className='py-6 bg-[#FFF3EA]'>
 
 
                 <div className='flex justify-between'>
-                    <div className='flex ml-5'>
+
+{/* empth space */}
+                    <div className='hidden md:block'></div>
+
+
+{/* left logo */}
+                    <div className='ml-5 block md:hidden'>
                         <Link to="/"><img src={logo}></img></Link>
                     </div>
 
@@ -54,14 +60,14 @@ const Header = () => {
 
 
                     <div className='icons flex'>
-                        <MagnifyingGlassCircleIcon className="h-8 w-8 text-mistyrose-300 mr-3" />
-                        <ShoppingCartIcon className="h-8 w-8 text-mistyrose-300 mr-3" />
+                        <MagnifyingGlassCircleIcon className="h-8 w-8 text-[#f8c4b5] mr-3" />
+                        <ShoppingCartIcon className="h-8 w-8 text-[#f8c4b5] mr-3" />
                         <div className='md:hidden' onClick={() => setOpen(!open)}>
                             <span>
                                 {
                                     open === true ?
-                                        <XMarkIcon className="h-8 w-8 text-mistyrose-300 mr-3" /> :
-                                        <Bars3Icon className="h-8 w-8 text-mistyrose-300 mr-3" />
+                                        <XMarkIcon className="h-8 w-8 text-[#f8c4b5] mr-3" /> :
+                                        <Bars3Icon className="h-8 w-8 text-[#f8c4b5] mr-3" />
                                 }
 
                             </span>

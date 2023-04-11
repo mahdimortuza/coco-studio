@@ -10,6 +10,7 @@ import Review from '../components/Review/Review';
 import FollowUs from '../components/FollowUs';
 import Recently from '../components/Recently/Recently';
 import SliderFeature from '../components/SliderFeature/SliderFeature'
+import AnimatedButton from '../components/AnimaterdButton/AnimatedButton';
 
 
 const HomeContant = () => {

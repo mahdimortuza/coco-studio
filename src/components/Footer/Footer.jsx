@@ -6,14 +6,14 @@ import { faFacebookF, faPinterestP, faInstagram } from '@fortawesome/free-brands
 
 const Footer = () => {
     return (
-        <div className='px-8 md:px-20 text-white bg-[#6ca494] py-16'>
+        <div className='px-8 md:px-20 text-white bg-[#6ba594] py-16'>
             <div className='grid md:grid-cols-5 gap-10 text-left'>
             <div>
                 <img className='mx-auto w-2/4 md:w-full' src={logo}></img>
             </div>
 
             <div className=''>
-                <h1 className='text-orange-200 text-xl'>Info</h1>
+                <h1 className='text-[#f8c2a9] text-xl'>Info</h1>
                 <p>Search</p>
                 <p>FAQs</p>
                 <p>Contact Us</p>
@@ -23,7 +23,7 @@ const Footer = () => {
             </div>
 
             <div className=''>
-                <h1 className='text-orange-200 text-xl'>Policies</h1>
+                <h1 className='text-[#f8c2a9] text-xl'>Policies</h1>
                 <p>Privacy Policy</p>
                 <p>Terms and Conditions</p>
                 <p>Shipping</p>
@@ -31,7 +31,7 @@ const Footer = () => {
             </div>
 
             <div className=''>
-                <h1 className='text-orange-200 text-xl'>Currency</h1>
+                <h1 className='text-[#f8c2a9] text-xl'>Currency</h1>
                 <form>AUD</form>
             </div>
 

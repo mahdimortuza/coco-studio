@@ -1,4 +1,6 @@
 import React from 'react';
+import { ArrowLongRightIcon } from '@heroicons/react/24/solid'
+
 
 import h1 from "../../img/h1.png"
 import h2 from "../../img/h2.png"
@@ -6,9 +8,9 @@ import { StarIcon } from '@heroicons/react/24/solid'
 
 const Styles = () => {
     return (
-        <div>
+        <div className='bg-[#F8C4B5] pb-16'>
             {/* style section starts here  */}
-            <div className='bg-white mx-10 md:mx-24 lg:mx-30 xl:mx-44 bg-white rounded-3xl mt-16'>
+            <div className='bg-white mx-10 md:mx-24 lg:mx-30 xl:mx-44 bg-white rounded-3xl pt-16'>
                 <h1 className='text-[#6ca494] font-bold text-5xl pt-10'>Choose Your Style</h1>
 
             {/* animation img  */}
@@ -128,7 +130,11 @@ const Styles = () => {
                     </p>
                 </div>
                 </div>
-                <button className='bg-[#6ca494] text-white text-xl px-10 py-3 rounded-3xl mb-10'>VIEW ALL</button>
+                <button className='relative inline-flex items-center bg-[#6ca494] text-white px-12 py-2 rounded-3xl text-xl mt-9 mb-36  hover:pr-16 ease-in-out duration-300 hover:bg-black hover:text-white'>
+                        <span className=''>VIEW ALL </span>
+
+                        <span className='absolute transform translate-x-full transition ease-in-out duration-300 opacity-0'><ArrowLongRightIcon className="h-6 w-6 ml-24" /></span>
+                    </button>
             </div>
         </div>
     );

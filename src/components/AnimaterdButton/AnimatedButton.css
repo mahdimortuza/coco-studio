@@ -1,0 +1,5 @@
+button:hover > .absolute {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { StarIcon } from '@heroicons/react/24/solid'
 import { RxDotFilled } from 'react-icons/rx';
+import { ArrowLongRightIcon } from '@heroicons/react/24/solid'
 
 import miriam from "../../img/miriam.png"
 
@@ -62,7 +63,7 @@ const Review = () => {
 </div>
 
 
-<div className='mx-16 pb-4 px-6 rounded-3xl bg-violet-200'>
+<div className='mx-16 pb-4 px-6 rounded-3xl bg-[#f3e8ec]'>
 <h1 className='mt-14 font-bold text-left text-2xl my-5 text-black'>{slides[currentIndex].name}</h1>
 <p className='text-left'>{slides[currentIndex].description}</p>
 </div>
@@ -102,7 +103,7 @@ const Review = () => {
 
 
                     <div className='flex flex-col gap-6'>
-                        <div className='w-full p-6 rounded-2xl text-left bg-orange-100'>
+                        <div className='w-full p-6 rounded-2xl text-left bg-[#f3e8ec]'>
                             <h1 className='font-bold text-xl'>Theresa</h1>
                             <div className='flex mt-2 mb-2'>
                                 <StarIcon className="h-6 w-6 text-yellow-500" />
@@ -113,7 +114,7 @@ const Review = () => {
                             </div>
                             <p>"Wow, just wow! You have no idea how this makes my heart so full. I'm so happy"</p>
                         </div>
-                        <div className='w-full p-6 rounded-2xl text-left bg-orange-100'>
+                        <div className='w-full p-6 rounded-2xl text-left bg-[#f3e8ec]'>
                             <h1 className='font-bold text-xl'>Theresa</h1>
                             <div className='flex mt-2 mb-2'>
                                 <StarIcon className="h-6 w-6 text-yellow-500" />
@@ -144,7 +145,7 @@ const Review = () => {
                     </div>
 
                     <div className='flex flex-col gap-6'>
-                        <div className='w-full p-6 rounded-2xl text-left bg-orange-100'>
+                        <div className='w-full p-6 rounded-2xl text-left bg-[#f3e8ec]'>
                             <h1 className='font-bold text-xl'>Theresa</h1>
                             <div className='flex mt-2 mb-2'>
                                 <StarIcon className="h-6 w-6 text-yellow-500" />
@@ -155,7 +156,7 @@ const Review = () => {
                             </div>
                             <p>"Wow, just wow! You have no idea how this makes my heart so full. I'm so happy"</p>
                         </div>
-                        <div className='w-full p-6 rounded-2xl text-left bg-orange-100'>
+                        <div className='w-full p-6 rounded-2xl text-left bg-[#f3e8ec]'>
                             <h1 className='font-bold text-xl'>Theresa</h1>
                             <div className='flex mt-2 mb-2'>
                                 <StarIcon className="h-6 w-6 text-yellow-500" />
@@ -171,7 +172,11 @@ const Review = () => {
 
 
                 </div>
-                <button className='bg-[#6ca494] text-white px-12 py-3 rounded-3xl text-xl mt-10'>CREATE NOW</button>
+                <button className='relative inline-flex items-center bg-[#6ca494] text-white px-12 py-2 rounded-3xl text-xl mt-9 mb-36  hover:pr-16 ease-in-out duration-300 hover:bg-black hover:text-white'>
+                        <span className=''>CREATE NOW </span>
+
+                        <span className='absolute transform translate-x-full transition ease-in-out duration-300 opacity-0'><ArrowLongRightIcon className="h-6 w-6 ml-32" /></span>
+                    </button>
             </div>
 
         </div>
