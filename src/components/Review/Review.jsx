@@ -84,7 +84,6 @@ const Review = () => {
 
 
             
-                <button className='bg-[#6ca494] text-white px-12 py-3 rounded-3xl text-xl mt-5'>CREATE NOW</button>
 
 
 
